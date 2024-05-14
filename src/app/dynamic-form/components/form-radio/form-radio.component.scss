@@ -1,0 +1,38 @@
+.dynamic-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-input label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .error-message {
+    margin-top: 5px;
+    color: #dc3545;
+  
+  }
+  
+  
+  .invalid input {
+    border-color: #dc3545 !important;
+  }
+  
+  .invalid .error-text {
+    display: block;
+  }
+  

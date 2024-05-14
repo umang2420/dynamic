@@ -1,0 +1,26 @@
+.dynamic-field {
+  margin-bottom: 20px;
+}
+
+.form-date label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.date-input .ui-calendar {
+  width: 100%;
+}
+
+.error-message {
+  margin-top: 5px;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.invalid .error-text {
+  display: block;
+}

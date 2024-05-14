@@ -1,0 +1,12 @@
+<div class="dynamic-field form-select" [formGroup]="group">
+    <label>{{ config.label }}</label>
+    <select [formControlName]="config.name">
+        <option value="">{{ config.placeholder }}</option>
+        <option *ngFor="let option of config.options">
+            {{ option }}
+        </option>
+    </select>
+    <div *ngIf="group.get(config.name)?.touched" class="error-message">
+        <div *ngIf="group.get(config.name)?.errors">Please select minimum 1 option</div>
+    </div>
+</div>

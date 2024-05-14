@@ -1,0 +1,10 @@
+<div class="dynamic-field form-email" [formGroup]="group">
+    <label>{{ config.label }}</label>
+    <input type="email" pInputText [placeholder]="config.placeholder" [formControlName]="config.name" class="email-input">
+    <div *ngIf="group.get(config.name)?.touched && (group.get(config.name)?.errors || group.get(config.name)?.dirty)" class="error-message">
+        <div *ngIf="group.get(config.name)?.errors?.['required']; else emailError">Please enter an email</div>
+        <ng-template #emailError>
+            <div *ngIf="group.get(config.name)?.errors?.['email']">Please enter a valid email</div>
+        </ng-template>
+    </div>
+</div>

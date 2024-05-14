@@ -1,0 +1,7 @@
+    <div class="dynamic-field form-date" [formGroup]="group">
+        <label>{{ config.label }}</label>
+        <p-calendar [placeholder]="config.placeholder" [formControlName]="config.name" class="date-input"
+            [minDate]="config.min && group.value.StartDate ? group.value.StartDate : null" [maxDate]="config.max && group.value.EndDate ? group.value.EndDate : null">
+        </p-calendar>
+    </div>
+    

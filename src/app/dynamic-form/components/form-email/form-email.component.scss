@@ -1,0 +1,30 @@
+.dynamic-field {
+  margin-bottom: 20px;
+}
+
+.form-email label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.form-email input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: #dc3545;
+
+}
+
+
+.invalid input {
+  border-color: #dc3545 !important;
+}
+
+.invalid .error-text {
+  display: block;
+}

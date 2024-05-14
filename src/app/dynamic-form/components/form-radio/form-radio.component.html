@@ -1,0 +1,13 @@
+<div class="dynamic-field form-input" [formGroup]="group">
+    <label>{{ config.label }}</label>
+    <div>
+      <ng-container *ngFor="let option of config.options">
+        <p-radioButton [value]="option" [formControlName]="config.name"></p-radioButton>
+        <label>{{ option }}</label>
+    </ng-container>
+    </div>
+    <div *ngIf="group.get(config.name)?.touched" class="error-message">
+      <div *ngIf="group.get(config.name)?.errors">Please select an option</div>
+
+    </div>
+</div>

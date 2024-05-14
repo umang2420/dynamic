@@ -1,0 +1,14 @@
+<div class="dynamic-field form-input" [formGroup]="group">
+    <label>{{ config.label }}</label>
+    <input type="text" pInputText [placeholder]="config.placeholder" [formControlName]="config.name">
+    <div *ngIf="group.get(config.name)?.invalid && (group.get(config.name)?.touched || group.get(config.name)?.dirty)" class="error-message">
+        <div *ngIf="group.get(config.name)?.errors?.['required']; else patternError">Please enter name</div>
+        <ng-template #patternError>
+            <div *ngIf="group.get(config.name)?.errors?.['pattern']">Enter Valid name</div>
+        </ng-template>
+    </div>
+</div>
+
+
+
+

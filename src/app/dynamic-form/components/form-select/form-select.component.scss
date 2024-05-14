@@ -1,0 +1,36 @@
+.dynamic-field {
+  margin-bottom: 20px;
+}
+
+.form-select label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-select select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-select select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: #dc3545;
+
+}
+
+.invalid select {
+  border-color: #dc3545 !important;
+}
+
+.invalid .error-text {
+  display: block;
+}
